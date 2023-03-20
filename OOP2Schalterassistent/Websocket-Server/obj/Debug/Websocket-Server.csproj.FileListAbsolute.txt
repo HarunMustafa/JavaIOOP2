@@ -1,0 +1,10 @@
+C:\Users\ham0497\source\repos\Websocket-Server\bin\Debug\Websocket-Server.exe.config
+C:\Users\ham0497\source\repos\Websocket-Server\bin\Debug\Websocket-Server.exe
+C:\Users\ham0497\source\repos\Websocket-Server\bin\Debug\Websocket-Server.pdb
+C:\Users\ham0497\source\repos\Websocket-Server\bin\Debug\websocket-sharp.dll
+C:\Users\ham0497\source\repos\Websocket-Server\obj\Debug\Websocket-Server.csproj.AssemblyReference.cache
+C:\Users\ham0497\source\repos\Websocket-Server\obj\Debug\Websocket-Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\ham0497\source\repos\Websocket-Server\obj\Debug\Websocket-Server.csproj.CoreCompileInputs.cache
+C:\Users\ham0497\source\repos\Websocket-Server\obj\Debug\Websocket-Server.csproj.CopyComplete
+C:\Users\ham0497\source\repos\Websocket-Server\obj\Debug\Websocket-Server.exe
+C:\Users\ham0497\source\repos\Websocket-Server\obj\Debug\Websocket-Server.pdb

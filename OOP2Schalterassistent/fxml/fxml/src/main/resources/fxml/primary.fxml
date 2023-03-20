@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="PortalID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.PrimaryController">
+   <children>
+      <CheckBox fx:id="chkbEinwiligungserklaerung" layoutX="65.0" layoutY="66.0" mnemonicParsing="false" text="Einwiligungserklärung" />
+      <CheckBox fx:id="chkbRechtskraftbescheingung" layoutX="268.0" layoutY="66.0" mnemonicParsing="false" text="Rechtskraftbescheingung" />
+      <CheckBox fx:id="chkbAusweisMutter" layoutX="751.0" layoutY="122.0" mnemonicParsing="false" text="Ausweiskopie Mutter" />
+      <CheckBox fx:id="chkbAusweisVater" layoutX="751.0" layoutY="66.0" mnemonicParsing="false" text="Ausweiskopie Vater" />
+      <CheckBox fx:id="chkbNiederlassungsausweis" layoutX="550.0" layoutY="66.0" mnemonicParsing="false" text="Niederlassungsausweis" />
+      <CheckBox fx:id="chkbElterlicheSorge" layoutX="550.0" layoutY="122.0" mnemonicParsing="false" text="Erklärung" />
+      <CheckBox fx:id="chkbGeburtsurkunde" layoutX="268.0" layoutY="122.0" mnemonicParsing="false" text="Geburtsurkunde oder Familienausweis" />
+      <CheckBox fx:id="chkbHeimatland" layoutX="65.0" layoutY="184.0" mnemonicParsing="false" text="Ausweis des Heimatlandes" />
+      <CheckBox fx:id="chkbSorgerechtentscheidung" layoutX="65.0" layoutY="122.0" mnemonicParsing="false" text="Sorgerechtentscheidung" />
+      <CheckBox fx:id="chkbAustauschpass" layoutX="751.0" layoutY="184.0" mnemonicParsing="false" text="Gesuch Austauschpass" />
+      <CheckBox fx:id="chkbKESB" layoutX="550.0" layoutY="184.0" mnemonicParsing="false" text="Entscheid KESB" />
+      <CheckBox fx:id="chkbVerlustmeldung" layoutX="268.0" layoutY="184.0" mnemonicParsing="false" text="Verlustmeldung" />
+      <CheckBox fx:id="chkbAbklaerung" layoutX="933.0" layoutY="184.0" mnemonicParsing="false" text="Abklärung" />
+      <CheckBox fx:id="chkbPersonendaten" layoutX="933.0" layoutY="122.0" mnemonicParsing="false" text="Bestätigung der Personendaten" />
+      <CheckBox fx:id="chkbEntwertung" layoutX="933.0" layoutY="66.0" mnemonicParsing="false" text="Pass/ID Entwertung" />
+
+      <Label layoutX="440.0" layoutY="24.0" text="Folgende Unterlagen sind noch einzureichen">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+            <Label layoutX="53.0" layoutY="276.0" text="Zusätzliche Produkte">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      
+      <Line endX="1093.0" layoutX="153.0" layoutY="236.0" startX="-100.0" />
+      <CheckBox fx:id="chkbVerlustmeldungID" layoutX="281.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleCheckBoxSelection" text="Verlustmeldung ID" />
+      <CheckBox fx:id="chkbVerlustmeldungPass" layoutX="481.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleCheckBoxSelection" text="Verlustmeldung Pass" />
+      <CheckBox fx:id="chkbNotfall" layoutX="673.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleCheckBoxSelection" text="Notfall Pass" />
+      
+      <Line endX="1093.0" layoutX="153.0" layoutY="333.0" startX="-100.0" />
+      <Line endX="-100.0" endY="247.0" layoutX="1035.0" layoutY="382.0" startX="-100.0" startY="-16.0" />
+
+
+      <Label layoutX="61.0" layoutY="350.0" prefHeight="20.0" prefWidth="353.0" text="Produkte für ausländische Staatsangehörige">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="391.0" text="Zemis Nummer (NAA) / Auftragsnummer (ISR)" />
+      <Label layoutX="61.0" layoutY="470.0" text="Name, Vorname" />
+      <Label layoutX="61.0" layoutY="548.0" text="Folgende Unterlagen sind noch einzureichen (NAA)" />
+      <CheckBox fx:id="chkAusGeburtsurkunde" layoutX="60.0" layoutY="595.0" mnemonicParsing="false" onAction="#handleCheckBoxSelection" text="Geburtsurkunde oder Familienausweis" />
+      <CheckBox fx:id="chkPassHeimat" layoutX="60.0" layoutY="635.0" mnemonicParsing="false" onAction="#handleCheckBoxSelection" text="Pass des Heimatlandes" />
+      <Button fx:id="konfig" layoutX="1078.0" layoutY="549.0" mnemonicParsing="false" onAction="#copyCsvFileToClient" prefHeight="34.0" prefWidth="150.0" text="Konfig" />
+      <Button fx:id="naaEuEftaButton" layoutX="506.0" layoutY="565.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="34.0" prefWidth="161.0" text="NAA EU/EFTA" />
+      <Button fx:id="naaDrittstaatenButton" layoutX="506.0" layoutY="498.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="34.0" prefWidth="157.0" text="NAA Drittstaaten" />
+      <Button fx:id="reisedokumentSemButton" layoutX="506.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="34.0" prefWidth="159.0" text="Reisedokument SEM" />
+      <Label layoutX="991.0" layoutY="360.0" text="Konfiguration">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label> 
+           <Label layoutX="993.0" layoutY="419.0" text="PortalID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="991.0" layoutY="462.0" text="Standort">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="993.0" layoutY="506.0" text="Drucker">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox id="PrinterComboBox" fx:id="ComboBoxDrucker" layoutX="1075.0" layoutY="512.0" prefWidth="150.0" />
+      <Label layoutX="65.0" layoutY="24.0" text="Schweiz QR">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox id="StandortComboBox" fx:id="ComboBoxStandort" layoutX="1078.0" layoutY="458.0" prefWidth="150.0" />
+      <TextField fx:id="txtAuftrag" layoutX="60.0" layoutY="426.0" prefHeight="28.0" prefWidth="406.0" />
+      <TextField fx:id="txtNameVorname" layoutX="60.0" layoutY="498.0" prefHeight="28.0" prefWidth="406.0" />
+      <TextField fx:id="PortalID" layoutX="1080.0" layoutY="410.0" prefHeight="28.0" prefWidth="148.0" />
+   </children>
+</AnchorPane>
